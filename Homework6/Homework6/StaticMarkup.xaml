@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:local="clr-namespace:Homework6"
+             x:Class="Homework6.StaticMarkup"
+             Title="Static Constants Page"
+             Padding="{x:Static local:Constants.PagePadding}">
+
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <Label Text="Static Markup"
+               TextColor="{x:Static local:Constants.BackgroundColor}"
+               BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+               Font="{x:Static local:Constants.TitleFont}"
+               HorizontalOptions="Center" />
+
+            <ScrollView Orientation="Vertical" 
+                        VerticalOptions="FillAndExpand" 
+                        IsClippedToBounds="True"
+                        VerticalScrollBarVisibility="Always"
+                        BackgroundColor="{x:Static local:Constants.BackgroundColor3}"
+                        x:Name="ScrollArea">
+                
+                <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+                    <Label Text="This page"
+                           TextColor="{x:Static local:Constants.BackgroundColor}"
+                           BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                           HorizontalOptions="Center" />
+                    <Label Text="Uses scroll"
+                           TextColor="{x:Static local:Constants.BackgroundColor2}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center" />
+                    <Label Text="View in"
+                           TextColor="{x:Static local:Constants.BackgroundColor}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center"/>
+                    <Label Text="The center"
+                           TextColor="{x:Static local:Constants.BackgroundColor2}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center"/>
+                    <Label Text="With a"
+                           TextColor="{x:Static local:Constants.BackgroundColor}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center"/>
+                    <Label Text="Header and"
+                           TextColor="{x:Static local:Constants.BackgroundColor2}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center"/>
+                    <Label Text="a button"
+                           TextColor="{x:Static local:Constants.BackgroundColor}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center"/>
+                    <Label Text="this content"
+                           TextColor="{x:Static local:Constants.BackgroundColor2}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center"/>
+                    <Label Text="is the" 
+                           TextColor="{x:Static local:Constants.BackgroundColor}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center"/>
+                    <Label Text="scrollable"
+                           TextColor="{x:Static local:Constants.BackgroundColor2}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center"/>
+                    <Label Text="area for" 
+                           TextColor="{x:Static local:Constants.BackgroundColor}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center"/>
+                    <Label Text="information"
+                           TextColor="{x:Static local:Constants.BackgroundColor2}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center"/>
+                    <Label Text="to be"
+                           TextColor="{x:Static local:Constants.BackgroundColor}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center"/>
+                    <Label Text="shown to" 
+                           TextColor="{x:Static local:Constants.BackgroundColor2}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center"/>
+                    <Label Text="the user" 
+                           TextColor="{x:Static local:Constants.BackgroundColor}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center"/>
+                    <Label Text="it also" 
+                           TextColor="{x:Static local:Constants.BackgroundColor2}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center"/>
+                    <Label Text="has alternating"
+                           TextColor="{x:Static local:Constants.BackgroundColor}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center"/>
+                    <Label Text="text color"
+                           TextColor="{x:Static local:Constants.BackgroundColor2}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center"/>
+                    <Label Text="for each" 
+                           TextColor="{x:Static local:Constants.BackgroundColor}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center"/>
+                    <Label Text="label in" 
+                           TextColor="{x:Static local:Constants.BackgroundColor2}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center"/>
+                    <Label Text="this area" 
+                           TextColor="{x:Static local:Constants.BackgroundColor}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center"/>
+                </StackLayout>
+            </ScrollView>
+
+            <Button  Text="Sctoll To Top"
+                     Clicked="ScrollToTop"
+                     TextColor="{x:Static local:Constants.BackgroundColor2}"
+                            BackgroundColor="{x:Static local:Constants.ForegroundColor}"
+                            HorizontalOptions="Center" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
